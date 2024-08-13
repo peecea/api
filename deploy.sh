@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Updating code from Git..."
-cd /api && sudo git fetch origin && sudo git reset --hard origin/master
+cd /api && sudo git fetch origin && sudo git reset --hard origin/main
 
 echo "Building the application ... "
 cd /api && go build -buildvcs=false
