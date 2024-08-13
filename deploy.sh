@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "Updating code from Git..."
-cd /api && sudo git fetch origin && sudo git reset --hard origin/main
+sudo git fetch origin && sudo git reset --hard origin/main
 
 echo "Building the application ... "
-cd /api && go build -buildvcs=false
+go build -buildvcs=false
 
 echo "Reloading systemd..."
 sudo systemctl daemon-reload
