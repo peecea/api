@@ -14,7 +14,7 @@ func InitiateConfiguration() (err error) {
 		App = Config{
 			Version:                 "v0.0.1",
 			Port:                    "8087",
-			Host:                    "",
+			Host:                    "172.31.94.226",
 			RunningMode:             RunningModeProd,
 			TokenSecret:             "",
 			DatabaseUserName:        "peec",
