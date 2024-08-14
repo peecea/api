@@ -19,8 +19,8 @@ func InitiateConfiguration() (err error) {
 			TokenSecret:             "",
 			DatabaseUserName:        "admin",
 			DatabaseUserPassword:    "Wallicio2020#",
-			DatabaseName:            "peec",
-			DatabaseHost:            "peec.czko4g22s9mu.us-east-1.rds.amazonaws.com",
+			DatabaseName:            "peecea",
+			DatabaseHost:            "database-2.czko4g22s9mu.us-east-1.rds.amazonaws.com",
 			DatabasePort:            "3306",
 			DatabaseConnexionString: "",
 		}
