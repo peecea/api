@@ -17,7 +17,7 @@ func InitiateConfiguration() (err error) {
 			Host:                    "",
 			RunningMode:             RunningModeProd,
 			TokenSecret:             "",
-			DatabaseUserName:        "root",
+			DatabaseUserName:        "admin",
 			DatabaseUserPassword:    "Wallicio2020#",
 			DatabaseName:            "peec",
 			DatabaseHost:            "peecdb.czko4g22s9mu.us-east-1.rds.amazonaws.com",
