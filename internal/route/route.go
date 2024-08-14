@@ -1,11 +1,11 @@
 package route
 
 import (
-	"duval/internal/configuration"
-	"duval/internal/route/docs"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"peec/internal/configuration"
+	"peec/internal/route/docs"
 	"time"
 )
 

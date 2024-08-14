@@ -1,10 +1,10 @@
 package password
 
 import (
-	"duval/database"
-	"duval/internal/utils"
-	"duval/internal/utils/state"
 	"errors"
+	"peec/database"
+	"peec/internal/utils"
+	"peec/internal/utils/state"
 	"strings"
 	"time"
 )

@@ -1,19 +1,19 @@
 package profile
 
 import (
-	"duval/database"
-	"duval/internal/authentication"
-	"duval/internal/configuration"
-	"duval/internal/utils"
-	"duval/internal/utils/errx"
-	"duval/internal/utils/state"
-	"duval/pkg/media"
-	"duval/pkg/user"
 	"github.com/gabriel-vasile/mimetype"
 	"github.com/joinverse/xid"
 	"mime/multipart"
 	"net/http"
 	"path/filepath"
+	"peec/database"
+	"peec/internal/authentication"
+	"peec/internal/configuration"
+	"peec/internal/utils"
+	"peec/internal/utils/errx"
+	"peec/internal/utils/state"
+	"peec/pkg/media"
+	"peec/pkg/user"
 	"time"
 
 	"github.com/gin-gonic/gin"

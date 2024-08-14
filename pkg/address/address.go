@@ -1,12 +1,12 @@
 package address
 
 import (
-	"duval/database"
-	"duval/internal/authentication"
-	"duval/internal/utils"
-	"duval/internal/utils/errx"
-	"duval/internal/utils/state"
 	"net/http"
+	"peec/database"
+	"peec/internal/authentication"
+	"peec/internal/utils"
+	"peec/internal/utils/errx"
+	"peec/internal/utils/state"
 	"time"
 
 	"github.com/gin-gonic/gin"

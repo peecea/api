@@ -2,11 +2,11 @@ package database
 
 import (
 	"database/sql"
-	"duval/database/db"
-	"duval/internal/configuration"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/iancoleman/strcase"
 	"github.com/jmoiron/sqlx"
+	"peec/database/db"
+	"peec/internal/configuration"
 	"time"
 )
 

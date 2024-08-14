@@ -1,8 +1,8 @@
 package authentication
 
 import (
-	"duval/pkg/user/authorization"
 	"github.com/gin-gonic/gin"
+	"peec/pkg/user/authorization"
 )
 
 func IsStudent(ctx *gin.Context) (ret bool) {

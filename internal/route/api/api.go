@@ -1,18 +1,18 @@
 package api
 
 import (
-	"duval/internal/authentication"
-	"duval/internal/route/docs"
-	"duval/pkg/address"
-	"duval/pkg/education"
-	"duval/pkg/mark"
-	"duval/pkg/media"
-	cvtype "duval/pkg/media/cv"
-	"duval/pkg/media/profile"
-	"duval/pkg/media/video"
-	"duval/pkg/planning"
-	"duval/pkg/user"
 	"net/http"
+	"peec/internal/authentication"
+	"peec/internal/route/docs"
+	"peec/pkg/address"
+	"peec/pkg/education"
+	"peec/pkg/mark"
+	"peec/pkg/media"
+	cvtype "peec/pkg/media/cv"
+	"peec/pkg/media/profile"
+	"peec/pkg/media/video"
+	"peec/pkg/planning"
+	"peec/pkg/user"
 )
 
 var Routes = []docs.RouteDocumentation{

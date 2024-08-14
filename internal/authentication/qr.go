@@ -1,15 +1,15 @@
 package authentication
 
 import (
-	"duval/database"
-	"duval/internal/configuration"
-	"duval/internal/utils"
-	"duval/internal/utils/errx"
 	"github.com/gin-gonic/gin"
 	"github.com/joinverse/xid"
 	"github.com/yeqown/go-qrcode/v2"
 	"github.com/yeqown/go-qrcode/writer/standard"
 	"net/http"
+	"peec/database"
+	"peec/internal/configuration"
+	"peec/internal/utils"
+	"peec/internal/utils/errx"
 	"strconv"
 	"time"
 )

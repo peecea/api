@@ -1,15 +1,15 @@
 package education
 
 import (
-	"duval/database"
-	"duval/internal/authentication"
-	"duval/internal/utils"
-	"duval/internal/utils/errx"
-	"duval/internal/utils/state"
-	"duval/pkg/user/authorization"
 	"errors"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"peec/database"
+	"peec/internal/authentication"
+	"peec/internal/utils"
+	"peec/internal/utils/errx"
+	"peec/internal/utils/state"
+	"peec/pkg/user/authorization"
 	"strconv"
 	"time"
 )

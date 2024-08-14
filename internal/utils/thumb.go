@@ -1,7 +1,6 @@
 package utils
 
 import (
-	"duval/database"
 	"github.com/disintegration/imaging"
 	"github.com/joinverse/xid"
 	"github.com/unidoc/unipdf/v3/model"
@@ -9,6 +8,7 @@ import (
 	"image"
 	"image/color"
 	"mime/multipart"
+	"peec/database"
 	"time"
 )
 

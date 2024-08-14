@@ -1,8 +1,8 @@
 package route
 
 import (
-	"duval/internal/route/api"
-	"duval/internal/route/docs"
+	"peec/internal/route/api"
+	"peec/internal/route/docs"
 )
 
 var RootRoutesGroup = []docs.RootDocumentation{

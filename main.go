@@ -1,9 +1,9 @@
 package main
 
 import (
-	"duval/database"
-	"duval/internal/route"
 	"github.com/jmoiron/sqlx"
+	"peec/database"
+	"peec/internal/route"
 )
 
 func main() {

@@ -1,9 +1,9 @@
 package authentication
 
 import (
-	"duval/database"
-	"duval/internal/configuration"
 	"errors"
+	"peec/database"
+	"peec/internal/configuration"
 	"strings"
 
 	"github.com/gin-gonic/gin"

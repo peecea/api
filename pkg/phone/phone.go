@@ -1,9 +1,9 @@
 package phone
 
 import (
-	"duval/database"
-	"duval/internal/utils"
 	"net/http"
+	"peec/database"
+	"peec/internal/utils"
 	"strconv"
 	"time"
 

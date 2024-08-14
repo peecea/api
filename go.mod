@@ -1,4 +1,4 @@
-module duval
+module peec
 
 go 1.22
 

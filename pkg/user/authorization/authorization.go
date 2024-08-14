@@ -1,8 +1,8 @@
 package authorization
 
 import (
-	"duval/database"
-	"duval/internal/utils/state"
+	"peec/database"
+	"peec/internal/utils/state"
 	"time"
 )
 

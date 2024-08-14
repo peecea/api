@@ -1,14 +1,14 @@
 package media
 
 import (
-	"duval/database"
-	"duval/internal/authentication"
-	"duval/internal/utils"
-	"duval/internal/utils/errx"
-	"duval/internal/utils/state"
 	"github.com/gabriel-vasile/mimetype"
 	"net/http"
 	"path/filepath"
+	"peec/database"
+	"peec/internal/authentication"
+	"peec/internal/utils"
+	"peec/internal/utils/errx"
+	"peec/internal/utils/state"
 	"time"
 
 	"github.com/gin-gonic/gin"

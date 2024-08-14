@@ -1,19 +1,19 @@
 package video
 
 import (
-	"duval/database"
-	"duval/internal/authentication"
-	"duval/internal/configuration"
-	"duval/internal/utils"
-	"duval/internal/utils/errx"
-	"duval/internal/utils/state"
-	"duval/pkg/media"
 	"github.com/gabriel-vasile/mimetype"
 	"github.com/gin-gonic/gin"
 	"github.com/joinverse/xid"
 	"mime/multipart"
 	"net/http"
 	"path/filepath"
+	"peec/database"
+	"peec/internal/authentication"
+	"peec/internal/configuration"
+	"peec/internal/utils"
+	"peec/internal/utils/errx"
+	"peec/internal/utils/state"
+	"peec/pkg/media"
 	"time"
 )
 

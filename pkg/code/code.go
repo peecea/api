@@ -1,8 +1,8 @@
 package code
 
 import (
-	"duval/database"
 	"math/rand"
+	"peec/database"
 	"time"
 )
 
