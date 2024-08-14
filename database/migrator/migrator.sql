@@ -196,9 +196,9 @@ values      ('L1'),
             ('M2'),
             ('MP1'),
             ('MP2'),
+            ('MVR'),
             ('D1'),
-            ('D2'),
-            ('D3');
+            ('D2');
 --
 --
 --  INDIRECTION TABLE BETWEEN SUBJECT AND USER

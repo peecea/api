@@ -20,7 +20,7 @@ func InitiateConfiguration() (err error) {
 			DatabaseUserName:        "admin",
 			DatabaseUserPassword:    "wALLICIO2020#",
 			DatabaseName:            "peecea",
-			DatabaseHost:            "peec.czko4g22s9mu.us-east-1.rds.amazonaws.com",
+			DatabaseHost:            "peecea.czko4g22s9mu.us-east-1.rds.amazonaws.com",
 			DatabasePort:            "3306",
 			DatabaseConnexionString: "",
 		}
