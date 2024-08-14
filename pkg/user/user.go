@@ -331,6 +331,14 @@ func UpdMyProfile(ctx *gin.Context) {
 		return
 	}
 
+	usr, err = GetUserWithId(tok.UserId)
+	if err != nil {
+		ctx.AbortWithStatusJSON(http.StatusBadRequest, utils.ErrorResponse{
+			Message: errx.UnAuthorizedError,
+		})
+		return
+	}
+
 	err = ctx.ShouldBindJSON(&usr)
 	if err != nil {
 		ctx.AbortWithStatusJSON(http.StatusBadRequest, utils.ErrorResponse{
@@ -339,7 +347,6 @@ func UpdMyProfile(ctx *gin.Context) {
 		return
 	}
 
-	usr.Id = tok.UserId
 	err = database.Update(usr)
 	if err != nil {
 		ctx.AbortWithStatusJSON(http.StatusBadRequest, utils.ErrorResponse{
