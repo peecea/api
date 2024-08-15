@@ -16,7 +16,7 @@ func InitiateConfiguration() (err error) {
 			Port:                    "8087",
 			Host:                    "ec2-3-83-15-71.compute-1.amazonaws.com",
 			RunningMode:             RunningModeProd,
-			TokenSecret:             "",
+			TokenSecret:             "437b059d-bd8b-40d5-920a-341bb8a3f15f",
 			DatabaseUserName:        "admin",
 			DatabaseUserPassword:    "Wallicio2020#",
 			DatabaseName:            "peec",
