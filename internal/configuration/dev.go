@@ -14,7 +14,7 @@ func InitiateConfiguration() (err error) {
 		App = Config{
 			Version:                 "v0.0.1",
 			Port:                    "8087",
-			Host:                    "",
+			Host:                    "ec2-3-83-15-71.compute-1.amazonaws.com",
 			RunningMode:             RunningModeProd,
 			TokenSecret:             "",
 			DatabaseUserName:        "admin",
