@@ -237,6 +237,7 @@ create table post
     updated_at datetime     default CURRENT_TIMESTAMP,
     deleted_at datetime     default '0000-00-00 00:00:00',
     poster_id  int          default 0,
+    description varchar(5000) default '',
     media_xid  varchar(250) default 0
 );
 
