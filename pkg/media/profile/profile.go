@@ -5,6 +5,7 @@ import (
 	"github.com/joinverse/xid"
 	"mime/multipart"
 	"net/http"
+	"os"
 	"path/filepath"
 	"peec/database"
 	"peec/internal/authentication"
@@ -20,18 +21,17 @@ import (
 )
 
 const (
-	UserProfileImage = utils.UserProfileImage
+	UserProfileImage = 3
 )
 
 type Media struct {
-	Id          uint       `json:"id"`
-	CreatedAt   time.Time  `json:"created_at"`
-	UpdatedAt   time.Time  `json:"updated_at"`
-	DeletedAt   *time.Time `json:"deleted_at"`
-	FileName    string     `json:"file_name"`
-	Extension   string     `json:"extension"`
-	Xid         string     `json:"xid"`
-	ContentType uint       `json:"content_type"`
+	Id        uint       `json:"id"`
+	CreatedAt time.Time  `json:"created_at"`
+	UpdatedAt time.Time  `json:"updated_at"`
+	DeletedAt *time.Time `json:"deleted_at"`
+	FileName  string     `json:"file_name"`
+	Extension string     `json:"extension"`
+	Xid       string     `json:"xid"`
 }
 
 func Upload(ctx *gin.Context) {
@@ -421,5 +421,19 @@ func RemoveCurrentUserProfile(media media.Media) (err error) {
 	if err != nil {
 		return err
 	}
+
+	filePath := utils.FILE_UPLOAD_DIR + utils.THUMB_FILE_UPLOAD_DIR + media.Xid + media.Extension
+	err = ClearMediaFile(filePath)
+	if err != nil {
+		return err
+	}
 	return
+}
+
+func ClearMediaFile(filePath string) error {
+	err := os.Remove(filePath)
+	if err != nil {
+		return err
+	}
+	return nil
 }

@@ -12,6 +12,7 @@ import (
 	"peec/pkg/media/profile"
 	"peec/pkg/media/video"
 	"peec/pkg/planning"
+	"peec/pkg/post"
 	"peec/pkg/user"
 )
 
@@ -313,6 +314,38 @@ var Routes = []docs.RouteDocumentation{
 		HttpMethod:   http.MethodGet,
 		RelativePath: "/user_mark/comment",
 		Handler:      mark.GetUserMarkComment,
+		NeedToken:    true,
+	},
+
+	// post Routes
+	{
+		HttpMethod:   http.MethodPost,
+		RelativePath: "/post",
+		Handler:      post.CreatePost,
+		NeedToken:    true,
+	},
+	{
+		HttpMethod:   http.MethodDelete,
+		RelativePath: "/post",
+		Handler:      post.DeletePost,
+		NeedToken:    true,
+	},
+	{
+		HttpMethod:   http.MethodGet,
+		RelativePath: "/posts",
+		Handler:      post.GetPosts,
+		NeedToken:    true,
+	},
+	{
+		HttpMethod:   http.MethodGet,
+		RelativePath: "/post/:postId",
+		Handler:      post.GetSinglePost,
+		NeedToken:    true,
+	},
+	{
+		HttpMethod:   http.MethodGet,
+		RelativePath: "/post",
+		Handler:      post.GetUserPosts,
 		NeedToken:    true,
 	},
 }

@@ -369,7 +369,7 @@ func Login(ctx *gin.Context) {
 	err = ctx.ShouldBindJSON(&auth)
 	if err != nil {
 		ctx.AbortWithStatusJSON(http.StatusBadRequest, utils.ErrorResponse{
-			Message: err,
+			Message: errx.ParseError,
 		})
 	}
 
@@ -377,14 +377,14 @@ func Login(ctx *gin.Context) {
 	usr, err = GetUserByEmail(auth.Email)
 	if err != nil {
 		ctx.AbortWithStatusJSON(http.StatusBadRequest, utils.ErrorResponse{
-			Message: err,
+			Message: errx.UnknownUserError,
 		})
 		return
 	}
 
 	if !password.IsPasswordValid(usr.Id, auth.Password) {
 		ctx.AbortWithStatusJSON(http.StatusBadRequest, utils.ErrorResponse{
-			Message: errx.Lambda(err),
+			Message: errx.IncorrectPassword,
 		})
 		return
 	}

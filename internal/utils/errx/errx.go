@@ -1,34 +1,35 @@
 package errx
 
 import (
-	"errors"
 	"fmt"
 )
 
 func Lambda(err error) string {
 	fmt.Println(err)
-	return "Something went wrong"
+	return fmt.Sprintf("Something went wrong %v", err)
 }
 
-var UnAuthorizedError = errors.New("UnAuthorized")
-var ParamsError = errors.New("parse params error")
+var UnAuthorizedError = "UnAuthorized"
+var ParamsError = "parse params error"
 
 var (
-	ParseError            = errors.New("cannot parse")
-	TypeError             = errors.New("invalid type of file")
-	InvalidEmailError     = errors.New("invalid type of email")
-	DuplicateUserError    = errors.New("user already exist")
-	LinkUserError         = errors.New("cannot link user")
-	DuplicateAddressError = errors.New("address already taken")
+	ParseError            = "cannot parse"
+	UnknownUserError      = "please sign up"
+	IncorrectPassword     = "password incorrect"
+	TypeError             = "invalid type of file"
+	InvalidEmailError     = "invalid type of email"
+	DuplicateUserError    = "user already exist"
+	LinkUserError         = "cannot link user"
+	DuplicateAddressError = "address already taken"
 )
 
 var (
-	DbInsertError = errors.New("failed to insert data to database")
-	DbGetError    = errors.New("failed to fetch data from database")
-	DbDeleteError = errors.New("cannot delete data from the database")
-	DbUpdateError = errors.New("failed to update data")
+	DbInsertError = "failed to insert data to database"
+	DbGetError    = "failed to fetch data from database"
+	DbDeleteError = "cannot delete data from the database"
+	DbUpdateError = "failed to update data"
 )
 
 var (
-	NeedPasswordError = errors.New("password must be set")
+	NeedPasswordError = "password must be set"
 )
