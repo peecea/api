@@ -226,5 +226,6 @@ func GetPost(postId int) (post Post, err error) {
 	if err != nil {
 		return post, err
 	}
+
 	return post, nil
 }
